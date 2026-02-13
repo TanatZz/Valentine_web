@@ -65,3 +65,39 @@ body{
     height: 250px;
     overflow: hidden;
 }
+
+/* Sticker container */
+#sticker-container{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+  overflow:hidden;
+}
+
+/* Sticker */
+.sticker{
+  position:absolute;
+  bottom: 50px;
+  font-size:30px;
+  animation: floatMove linear infinite;
+}
+
+/* Animation */
+@keyframes floatMove{
+  0%{
+    transform: translateY(0) rotate(0deg);
+    opacity:0;
+  }
+
+  20%{
+    opacity:1;
+  }
+
+  100%{
+    transform: translateY(-120vh) rotate(360deg);
+    opacity:0;
+  }
+}

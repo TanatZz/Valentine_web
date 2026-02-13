@@ -49,3 +49,38 @@ setInterval(()=>{
     sliderImage.src = images[currentIndex];
 
 },2000);
+
+
+const stickers = ["❤️","💖","💘","💕","💗","💞"];
+
+const container = document.getElementById("sticker-container");
+
+function createSticker(){
+  
+  const sticker = document.createElement("div");
+  sticker.classList.add("sticker");
+
+  // random sticker
+  sticker.innerText = stickers[
+    Math.floor(Math.random() * stickers.length)
+  ];
+
+  // random position
+  sticker.style.left = Math.random() * 100 + "vw";
+
+  // random size
+  sticker.style.fontSize = (20 + Math.random() * 40) + "px";
+
+  // random speed
+  sticker.style.animationDuration = (4 + Math.random() * 4) + "s";
+
+  container.appendChild(sticker);
+
+  // remove after animation
+  setTimeout(()=>{
+    sticker.remove();
+  },8000);
+}
+
+// create every 500ms
+setInterval(createSticker,500);
