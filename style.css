@@ -16,7 +16,7 @@ body{
     filter: drop-shadow(0 0 20px pink);
 }
 
-/* Card Style */
+/* Card Style ขนาดการ์ด*/
 .valentine-card{
     max-width: 1000px;
     max-height: 1000px;
