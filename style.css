@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+
 body{
     background: linear-gradient(135deg,#ff9a9e,#fad0c4);
-    font-family: Arial, sans-serif;
+    font-family: "Noto Sans Thai", sans-serif;
 }
+
+
+
 
 /* Envelope Style */
 .envelope{
@@ -18,18 +23,22 @@ body{
 
 /* Card Style ขนาดการ์ด*/
 .valentine-card{
-    max-width: 1000px;
-    max-height: 1000px;
-    width: 500px;
-    height: 500px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 420px;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    background: white;
 }
 
-/* Image Slider */
+/* Image Section */
 .image-container{
-    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 15px;
 }
+/* Image */
 
 .arrow{
     position: absolute;
@@ -41,7 +50,7 @@ body{
     border-radius: 50%;
     cursor: pointer;
 }
-
+/*
 .left{
     left: -20px;
 }
@@ -49,20 +58,22 @@ body{
 .right{
     right: -20px;
 }
+    */
 
-/* Fix Image Section Size */
 .fix-size{
     width: 100%;
-    height: 250px;
+    height: 100%;
     object-fit: cover;
-    transition: 0.5s;
-
+    object-position: center center;
 }
+
+
+
 
 /* Fix container height */
 .image-container{
     width: 100%;
-    height: 250px;
+    height: 400px;
     overflow: hidden;
 }
 

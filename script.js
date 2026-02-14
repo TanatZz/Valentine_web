@@ -20,23 +20,7 @@ envelope.addEventListener("click",()=>{
     cardPage.classList.remove("d-none");
 });
 
-/* Next Image */
-nextBtn.addEventListener("click",()=>{
-    currentIndex++;
-    if(currentIndex >= images.length){
-        currentIndex = 0;
-    }
-    sliderImage.src = images[currentIndex];
-});
 
-/* Previous Image */
-prevBtn.addEventListener("click",()=>{
-    currentIndex--;
-    if(currentIndex < 0){
-        currentIndex = images.length - 1;
-    }
-    sliderImage.src = images[currentIndex];
-});
 
 /* Auto Change Image Every 3 Seconds */
 setInterval(()=>{
