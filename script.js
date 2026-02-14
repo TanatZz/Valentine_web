@@ -37,7 +37,7 @@ setInterval(()=>{
 },2000);
 
 
-const stickers = ["❤️","💖","💘","💕","💗","💞"];
+const stickers = ["❤️","💖","💘","💕","💗","💞","🌻️","🌹️","🌷️"];
 
 const container = document.getElementById("sticker-container");
 
