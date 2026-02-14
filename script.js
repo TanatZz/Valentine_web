@@ -5,7 +5,9 @@ const cardPage = document.getElementById("cardPage");
 const images = [
     "img1.jpg",
     "img2.jpg",
-    "img3.jpg"
+    "img3.jpg",
+    "img4.jpg",
+    "img5.jpg"
 ];
 
 let currentIndex = 0;
